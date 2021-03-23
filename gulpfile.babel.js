@@ -105,7 +105,7 @@ gulp.task('default', () => {
   });
 
   gulp.watch('./src/css/*.css', gulp.series('styles'))
-  gulp.watch('./src/views/**/*.pug', gulp.series('views')).on('change', reload);
-  gulp.watch('./src/js/*.js', gulp.series('babel')).on('change', reload);
-  gulp.watch('./src/images/*', gulp.series('imgmin')).on('change', reload);
+  gulp.watch('./src/views/**/*.pug', gulp.series('views')).on('change', reload)
+  gulp.watch('./src/js/*.js', gulp.series('babel')).on('change', reload)
+  gulp.watch('./src/images/*', gulp.series('imgmin')).on('change', reload)
 });
